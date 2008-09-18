@@ -1,13 +1,6 @@
-#summary One-sentence summary of this page.
+#summary How to use restforblazeds, a Java extension to BlazeDS.
 
 = Introduction =
 
-Add your content here.
+Under construction.
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
