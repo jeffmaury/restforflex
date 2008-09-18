@@ -3,7 +3,7 @@
 
 This project hosts several sub projects. These projects are:
   * *restforblazeds*: a Java based project providing an extension to BlazeDS
-  * *restforflex*:    an ActionScript based project providing an extension to the Flex SDK
+  * *restforflex*:    an !ActionScript based project providing an extension to the Flex SDK
 
 
 = Details =
