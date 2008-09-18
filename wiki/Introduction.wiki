@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-
+#summary General organization of the project
 = Introduction =
 
 This project hosts several sub projects. These projects are:
