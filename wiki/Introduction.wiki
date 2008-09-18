@@ -20,4 +20,4 @@ If you create a resource, 201 means the creation is successful.
 
 The extension is based on the concept that the HTTP status code will be sent back as a header, which are accessible on the Flex side (place is reserved in the returned message but current implementation is an empty bag). Please note that this extension does not require modification of the Flex SDK at all, user code just needs to handle the header when receiving the response.
 
-For more information on how to use this extension, please refer to [RestForBlazeDS].
+For more information on how to use this extension, please refer to [RestForBlazeDS restforblazeds].
