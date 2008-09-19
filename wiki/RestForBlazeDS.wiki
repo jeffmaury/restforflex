@@ -6,4 +6,4 @@ In order to use these extension, you just need to modify the BlazeDS configurati
 
 This is because the principle of this extension is to extend the proxy processing of BlazeDS, in order to transmit the HTTP status code in a response header.
 
-First, you need to install the JAR file of this extension (restforblazeds-0.0.1-SNAPSHOT) in the WEB-INF/lib directory of your BlazeDS web application. You can find this JAR file in the [http:../../source/browse SVN] repository of this project, under the repo subdirectory
+First, you need to install the JAR file of this extension (restforblazeds-0.0.1-SNAPSHOT) in the WEB-INF/lib directory of your BlazeDS web application. You can find this JAR file in the [http:../source/browse SVN] repository of this project, under the repo subdirectory
