@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jeffmaury</groupId>
+  <parent>
+    <groupId>com.jeffmaury</groupId>
+    <artifactId>restforblazeds-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>restforblazedssample</artifactId>
+  <packaging>pom</packaging>
+  <name>restforblazeds sample application</name>
+  <modules>
+    <module>html-template</module>
+    <module>restforblazedssample-config</module>
+    <module>restforblazedssample-flex</module>
+    <module>restforblazedssample-flex-web</module>
+  </modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>info.rvin.mojo</groupId>
+				<artifactId>flex-compiler-mojo</artifactId>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
