@@ -3,13 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.jeffmaury</groupId>
-    <artifactId>restforblazeds-super-parent</artifactId>
+    <artifactId>restforflex-super-parent</artifactId>
     <version>1.0</version>
   </parent>
+  <artifactId>restforblazeds-parent</artifactId>
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>restforblazeds parent</name>
   <modules>
     <module>restforblazeds</module>
+    <module>restforblazedssample</module>
   </modules>
 </project>
