@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexProperties flexServerType="8" flexWarLocation="E:/TEMP/blazeds_turnkey_3-0-0-544/blazeds.war" serverContextRoot="/restforblazedssample-flex-web" serverRoot="E:/work/riademos/workspacejsf/restforblazedssample/restforblazedssample-web/src/main/webapp" serverRootURL="http://localhost:8080/restforblazedssample-flex-web" toolCompile="true" useServerFlexSDK="false" version="1"/>

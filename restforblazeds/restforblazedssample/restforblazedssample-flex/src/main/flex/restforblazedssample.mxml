@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+  <mx:Script>
+    <![CDATA[
+      import mx.messaging.config.ServerConfig;
+      import mx.rpc.events.FaultEvent;
+      import mx.rpc.events.ResultEvent;
+      private function onSubmit(event:Event):void {
+        rstatus.text = "";
+        rmessage.text = "";
+        service.send({status:sstatus.text, message:smessage.text});
+      }
+      
+      private function onServiceResult(event:ResultEvent):void {
+        rstatus.text = event.message.headers.StatusCode;
+        rmessage.text = event.message.body.toString();
+      }
+      
+      private function onServiceFault(event:FaultEvent):void {
+        rstatus.text = "Fault !!!";
+        rmessage.text = "ID=" + event.fault.errorID + " code=" + event.fault.faultCode + 
+          " detail=" + event.fault.faultDetail + " message=" + event.fault.faultString;
+      }
+    ]]>
+  </mx:Script>
+  <mx:HTTPService id="service" useProxy="true" url="status.jsp" resultFormat="text" result="onServiceResult(event)" fault="onServiceFault(event)"/>
+	<mx:Button x="46" y="303" label="Submit" click="onSubmit(event)"/>
+	<mx:Text id="text" x="41" y="55" text="This application demonstates the use of the restforblazeds extensions. This interface allows you to submit a status code and a message to a REST service, which acts like an echo. So just enter a status code and a message and the returned status code and message will be displayed" width="458" height="71" fontWeight="bold"/>
+	<mx:Label x="41" y="150" text="Status code" height="18"/>
+	<mx:TextInput x="163" y="146" id="sstatus" text="200" maxChars="3"/>
+	<mx:Label x="41" y="190" text="Message" height="18"/>
+	<mx:TextInput x="163" y="186" id="smessage"/>
+	<mx:Label x="41" y="230" text="Received status" height="18"/>
+	<mx:Label x="41" y="270" text="Received message" height="18"/>
+	<mx:TextInput x="163" y="226" editable="false" id="rstatus"/>
+	<mx:TextInput x="163" y="266" id="rmessage" editable="false"/>
+	
+</mx:Application>
