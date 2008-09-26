@@ -5,7 +5,7 @@
       <version>0.0.1-SNAPSHOT</version>
       <artifactId>restforblazedssample</artifactId>
   </parent>
-  <artifactId>restforblazedssample-flex-web</artifactId>
+  <artifactId>restforblazedssample-web</artifactId>
   <packaging>war</packaging>
   <name>restforblazedssample (Web)</name>
   <description>Web application for restforblazeds sample application</description>

@@ -13,7 +13,7 @@
     <module>html-template</module>
     <module>restforblazedssample-config</module>
     <module>restforblazedssample-flex</module>
-    <module>restforblazedssample-flex-web</module>
+    <module>restforblazedssample-web</module>
   </modules>
 	<build>
 		<plugins>

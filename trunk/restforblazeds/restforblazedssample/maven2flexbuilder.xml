@@ -10,7 +10,7 @@
           target: default              
          ================================= -->
     <target name="default" description="--> Copy BlazeDS configuration files">
-    	<copy todir="${eclipse.project.name}-flex-web/src/main/webapp/WEB-INF/flex" verbose="true">
+    	<copy todir="${eclipse.project.name}-web/src/main/webapp/WEB-INF/flex" verbose="true">
     		<fileset dir="${eclipse.project.name}-config/src/main/resources"></fileset>
     	</copy>
     </target>
