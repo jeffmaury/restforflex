@@ -50,7 +50,6 @@
 		</dependency>
   </dependencies>    
   <build>
-    <finalName>${project.artifactId}-web-${project.version}</finalName>
     <sourceDirectory>src/main/flex</sourceDirectory>
 		<testSourceDirectory>src/test/flex</testSourceDirectory>
 		<outputDirectory>${project.build.directory}/flex-compiler</outputDirectory>
@@ -79,7 +78,7 @@
 				    </goals>
 				    <configuration>
 				      <services>${project.build.directory}/dependency/services-config.xml</services>
-				      <contextRoot>${project.artifactId}-web-${project.version}</contextRoot>
+				      <contextRoot>${project.parent.artifactId}-web-${project.version}</contextRoot>
 				    </configuration>
 				  </execution>
 		    </executions>
